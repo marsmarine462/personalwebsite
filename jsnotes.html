@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cheat Sheet</title>
+    <link rel="stylesheet" href="jsnotes.css">
+</head>
+<body>
+    <h1><a href="index.html">Home Page</a></h1>
+    <div>
+        <h2><a href="resume.html">Resume</a></h2>
+        <h2><a href="htmlnotes.html">HTML Cheat Sheet</a></h2>
+        <h2><a href="cssnotes.html">CSS Cheat Sheet</a></h2>
+        <h2><a href="jsnotes.html">JavaScript Cheat Sheet</a></h2>
+    </div>
+    <h1>JavaScript Cheat Sheet</h1>
+    <h2>What is JavaScript?</h2>
+    <p>JavaScript is a scripting language. I.e. it cannot be used without the use of a web browser. JavaScript is used in all online browsers and it has a wide range of support. JavaScript allows web pages to respond dynamically on the client side and, more recently, on the server-side. It would be difficult to discover a commercial web page that did not feature JavaScript code.</p>
+
+    <h3>JavaScript vs. CSS: What's the Difference?</h3>
+    <p>The web’s programming language is JavaScript. CSS is a language for describing how an HTML document should look. CSS is simple to understand, however, JavaScript is more complicated. JS may alter HTML text, properties, styles, and elements in general. JavaScript enables you to add more complicated functionalities to your HTML page while also giving you more flexibility. An interactive page may also be made with JavaScript. JavaScript can be used inside the &lt;head&gt;…&lt;/head&gt; tags, inside the &lt;body&gt;…&lg;/body&gt; tags, or anywhere in the HTML page for scripts that respond to user events. JavaScript, however, requires the &lt;script&gt; tag! JavaScript, like CSS, may be used in three different ways:</p>
+    <ul>
+        <li><b>Inline scripting</b>: JavaScript inside an HTML tag.</li>
+        <li><b>Internal or Embedded scripting</b>: JavaScript in a &lt;script&gt; tag, inside the same HTML file.</li>
+        <li><b>External scripting sheet</b>: JavaScript in a separate file with a .js extension.</li>
+    </ul>
+
+    <h3>Inline Scripting</h3>
+    <p>You may use specific attributes like onclick, onmouseover, onkeypress, onload, to inject JavaScript code right inside the HTML tag. However, you should avoid putting a lot of JavaScript code inline because it can clutter your HTML and make your JavaScript code difficult to manage.</p>
+
+    <h3>Internal or Embedded Scripting</h3>
+    <p>By inserting the JavaScript code between the &lt;script&gt; and &lt;/script&gt; tags, you may include it directly in your web pages. The &lt;script&gt; element tells the browser that the sentences inside should be regarded as an executable script rather than HTML.</p>
+
+    <h3>External Scripting Sheet</h3>
+    <p>You may simply put your JavaScript code in a separate .js file and then link it to your content using the arc attribute of the &lt;script&gt; element.</p>
+
+    <p>For longer web pages, you should put JavaScript &lt;script&gt; tags just before the closing &lt;/body&gt; tag rather than the beginning, as with CSS. The reason why is because HTML loads from top to bottom.</p>
+
+    <p>JavaScript is case sensitive, which implies all language keyboards, variables, function names, and other identifiers must be entered wiht the same capitalization.</p>
+
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript is a complete programming language with a browser-specific API (application programming interface), however, it does have certain limitations, such as no access to the local file system (security-based limitations). You can also add, delete, and update the content of a webpage with JavaScript, as well as modify the style and location of the elements. You can also react to mouse clicks, hovers and other events by listening to them. You can verify user inputs before uploading them to the server, and perform transitions and animations. You can also use alert pop-ups to show information or warning messages.</p>
+    <p>JavaScript accesses web pages using DOM (Document Object Model).</p>
+
+    <p>JavaScript comments are used to add notes to your code or disable sections without removing them. You comment single lines of code with a double slash (//) or multiple lines by starting with /* and ending with */.</p>
+
+    <h2>JavaScript Statements</h2>
+    <p>A computer program is a set of “instructions” that a computer will “execute.” These computer instructions are known as statements in a programming language. A set of programming statements makes up a JavaScript program.</p>
+    <p>The syntax is a collection of rules that describe how a JavaScript program should be constructed. Like other general programming languages, such as C++, each code statement should end with a semicolon (;). With JavaScript, semicolons are optional but recommended.</p>
+    <p>Variables are data storage containers. Variable names should be case sensitive and should not be a JS keyword. To declare a variable, use var, let or const. The var keyword should be used if you want to execute your code in an older browser.</p>
+
+    <h2>JavaScript Operators</h2>
+    <p>Operators are symbols or keywords that instruct the JavaScript engine to take a specific action. The addition (+) sign, for example, instructs the JavaScript engine to add two variables or values, whereas the equal-to (==), greater-than (>), or less-than (<) symbols instruct the JavaScript engine to compare two variables or values, and so forth.</p>
+
+    <h2>JavaScript Events</h2>
+    <p>An event occurs when a user interacts with a webpage. Like many other programming languages, JavaScript allows you to design code that performs different actions at runtime based on the outcomes of logical or comparative test conditions.</p>
+    
+    <h2>JavaScript Functions</h2>
+    <p>A function is a collection of statements that execute specific duties and may be preserved and updated independently from the main program. Functions make it possible to develop reusable code packages that are more portable and debuggable.</p>
+
+    <h2>JavaScript Strings</h2>
+    <p>A string is a collection of letters, integers, special characters, and mathematical values, or a mix of them. Strings can be generated by surrounding the string literal (i.e. string characters) in single quotes (') or double quotations ("). To concatenate or combine two or more strings, use the + and += operators.</p>
+
+    <h2>Loops</h2>
+    <p>Loops are used to repeat the same piece of code over and over again as long as a condition is satisfied. The primary principle of a loop is to save time and effort in coding by repeating tasks. In JavaScript, there are currently five different types of loops:</p>
+    <ul>
+        <li>while - repeats a block of code until the condition is satisfied.</li>
+        <li>do...while - once a block of code has been executed, the condition is evaluated. As long as the conditiopn is true, the cycle continues.</li>
+        <li>for - this command repeats a block of code until the counter reaches a specific value.</li>
+        <li>for...in - iterates over an object's properties</li>
+        <li>for...of - iterates across iterable objects like arrays, strings, and so on.</li>
+    </ul>
+
+    <h3>The while loop</h3>
+    <p>This is the most basic looping statement available in JavaScript. The while loop iterates across a block of code as long as the provided condition is true. The loop is terminated as soon as the condition is false.</p>
+
+    <h3>The do-while loop</h3>
+    <p>The do-while loop is a variant of the while loop in which the condition is evaluated at the end. A do-while loop executes the first iteration unconditionally, then evaluates the condition; if the condition is true, the iteration statements are repeated as long as the stated condition is true.</p>
+
+    <h3>The for loop</h3>
+    <p>The for loop is a control structure that repeats a block of code as long as a condition is true. It’s usually used to repeat a block of code a predetermined number of times. When it comes to iterating over an array, the for loop comes in handy. Because each array member contains an index, which may be utilized in the for loop variable.</p>
+
+    <h3>The for...in loop</h3>
+    <p>The for…in loop is a kind of for loop that iterates over the properties of an object, as well as an array of elements based on their keys/indexes.</p>
+
+    <h3>The for...of loop</h3>
+    <p>The new loop for…of in ES6 makes it relatively easy to iterate over arrays or other iterable types (such as strings). Here, the loop’s body is repeated for each element of the iterable type.</p>
+
+    <h2>Arrays</h2>
+    <p>An array in JavaScript is an ordered collection of values, which are referred to as elements and identified by an index. Elements are the individual values in an array. In C++, arrays are collections of the same types, while in JavaScript, they can include any form of data. The pop() function can be used to remove the last element from an array, while the shift() method may be used to remove the first element of the array. Use the splice() method to add or remove elements from any index position.</p>
+
+    <h2>Events</h2>
+    <p>An event takes place when a user interacts with a web page. Examples of events include clicking with the mouse, loading a web page or picture, hovering the mouse pointer over a hot spot on a website, choosing an input box on an HTML form, submitting an HTML form, or a keypress on a keyboard, etc.</p>
+
+    <h2>Objects and Arrays</h2>
+    <p>JavaScript is an Object-Oriented Programming (OOP) language. Nearly everything in JavaScript is an object or behaves like one. Therefore, in order to work with JavaScript efficiently, it is necessary to grasp how objects function as well as how to build and utilize new objects. A JavaScript object is a grouping of named values in the form of “properties”. There are three object categories in JavaScript: native objects, host objects, and user-defined objects.</p>
+
+    <h2>JSON</h2>
+    <p>JavaScript Object Notation (JSON) is a simple, efficient, and fast data interchange format for data exchange between various servers and clients on various platforms and operating systems. Both humans and computers can easily produce and comprehend JSON, which is a text-based format similar to XML. However, unlike XML, JSON data structures use less bandwidth. For online applications, JSON is the most widely used and compact data-interchange format.</p>
+
+    <h3>Valid JSON Syntax</h3>
+    <p>JSON has a few rules that differ from regular JavaScript objects:</p>
+    <ul>
+        <li>Strings must be double-quoted (in JavaScript objects, single or double-quoted strings are supported)</li>
+        <li>All property/field names must be quoted (in JavaScript objects, property names are strings, however, string quotes are optional)</li>
+        <li>Unsupported types: Function, Date, RegExp, Error</li>
+        <li>All others supported: Number, String, Boolean, Array, Object, null</li>
+    </ul>
+
+    Visit the pages for <a href="htmlnotes.html">HTML</a> and <a href="cssnotes.html">CSS</a> to learn more about HTML and CSS.
+    <script src="jsnotes.js"></script>
+</body>
+</html>

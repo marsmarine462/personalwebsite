@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="cssnotes.css">
+</head>
+<body>
+    <h1><a href="index.html">Home Page</a></h1>
+    <div>
+        <h2><a href="resume.html">Resume</a></h2>
+        <h2><a href="htmlnotes.html">HTML Cheat Sheet</a></h2>
+        <h2><a href="cssnotes.html">CSS Cheat Sheet</a></h2>
+        <h2><a href="jsnotes.html">JavaScript Cheat Sheet</a></h2>
+    </div>
+    <h1>CSS Cheat Sheet</h1>
+    <h2>What is CSS?</h2>
+    <p>CSS is an acronym for Cascading Style Sheets. It can be added as a separate file or incorporated directly into the HTML content. CSS may be included in an HTML document in three ways:</p>
+    <ul>
+        <li><b>Inline style</b>: Using the style attribute in the HTML start tag to create styles.</li>
+        <li><b>Internal or Embedded Style</b>: Using the &lt;style&gt; element in the document's head section.</li>
+        <li><b>External style sheet</b>: Pointing to an external CSS file using the &lt;link&gt; tag.</li>
+    </ul>
+
+    <h3>Inline Style</h3>
+    <p>By placing the CSS right into the start tag, inline styles are used to add unique style rules to an HTML element. The style attribute can be used to tie it to an HTML element. A variety of CSS properties and value pairs make up the style attribute. A semicolon (;) separates each “property: value” pair, exactly as you would apply in an embedded or external style sheet. However, it must be written on a single line, with no line breaks following the semicolon.</p>
+
+    <h3>Internal or Embedded Style Sheet</h3>
+    <p>Internal style sheets, also known as embedded style sheets, only affect the document in which they are embedded. The &lt;style&gt; element in an HTML document's head section is used to declare embedded style sheets. In an HTML page, you may specify as many &lt;style&gt; elements as you like, but they must exist between the &lt;head&gt; and &lt;/head&gt; tags.</p>
+
+    <h3>External Style Sheets</h3>
+    <p>When a style is applied to several pages on a website, an external style sheet is ideal. An external style sheet is a separate document that contains all the style rules and can be linked from any HTML page. External style sheets are the most versatile since they allow you to modify the appearance of a complete website by changing only one file. External style sheets may be attached in two ways: linking and importing.</p>
+
+    <h2>Selectors</h2>
+    <h3>The Element Type Selector</h3>
+    <p>An element type selector matches the element type name to all instances of the element in the document. The style rules in the h1 or p selectors will be applied to every &lt;h1&gt; or &lt;p&gt; tag in the document, independent of their location in the HTMLTree, and will colour them accordingly.</p>
+
+    <h3>The ID Selector</h3>
+    <p>The CSS ID selector looks for elements that have the same id as the element’s id attribute. We can target by id by prefixing the has symbol to a selector name. This is by far the most popular selector, nevertheless, when employing id selectors, be cautious. Consider this: do I really need to give this element an id to target it? Id selectors are inflexible, meaning no two elements in your HTML document can share the same id name. If at all possible, use a tag name/HTML elements, or even a pseudo-class as a starting point to target an HTML object.</p>
+
+    <h3>The Class Selector</h3>
+    <p>The CSS class selectors matches items based on their class attribute’s values. The difference between ids and classes is that you may target multiple components with the latter. When you want your styling to apply to a set of components, use classes. The style rule inside the selector p.pink changes the text of only those &lt;p&gt; elements with the class attribute value set to pink and does not affect the text of other paragraphs or other elements with pink ckasses.</p>
+
+    <h3>The Grouping Selector</h3>
+    <p>A style sheet’s selectors can frequently have the same rule declaration. To reduce the amount of code in your style sheet, group them into a comma-separated list. It also keeps you from having to repeat the same style rules over and over again.</p>
+
+    <h3>The Universal Selector</h3>
+    <p>An asterisk (*) denotes the universal selection, which matches every element on the document. If the element meets additional criteria, the universal selector might be omitted. This selector is frequently used to remove the element’s default margins and paddings from the default browser settings for testing purposes.</p>
+
+    <h3>The Pseudo Class Selector</h3>
+    <p>Pseudo-classes selectors are special pre-defined groupings in CSS that are used to deal with circumstances that aren’t covered by standard HTML. For example, there is no way to deal with mouse movements in standard HTML. The pseudo-class :hover in CSS, on the other hand, may be used to modify the style of a link.</p>
+
+    <h3>The Attribute Selector</h3>
+    <p>The CSS attribute selector matches elements depending on whether or not they have a specific attribute. By default, attribute selectors are case-sensitive and enclosed in brackets [].</p>
+
+    <h3>The Descendant Selector</h3>
+    <p>When you need to select an element that is a descendant of another element, you can use these selectors. For example, rather than targeting all anchor elements, you could prefer to I target only those anchors that are included within an unordered list.</p>
+
+    <h3>The Adjacent Selector</h3>
+    <p>Sibling elements can be selected using the adjacent selectors (i.e. elements at the same level). This selector has the following syntax: E1 + E2, where E2 is the selector’s target. In the following example, the selector h1 + p will only select the &lt;p&gt; elements if both the &lt;h1&gt; and &lt;p&gt; elements have the same parent in the document tree and the &lt;h1&gt; element is immediately before the &lt;p&gt; element. That is, the relevant style rules will only apply to the paragraphs that follow each &lt;h1&gt; heading.</p>
+
+    <h3>The Child Selector</h3>
+    <p>A child selector is used to only select elements that are direct children of another element. A greater than sign (>) separates two over more selectors to form a child selector. This selector can be used, for example. to choose the initial level of list elements within a nested list with several levels.</p>
+
+    <h3>The :nth-child() Selector</h3>
+    <p>The :nth-child() selector finds elements depending on their relative position among siblings.</p>
+
+    <h3>CSS Style Priority Rules</h3>
+    <p>The order of priority for the different styles “cascades” from one level to the next, hence the name “cascading style sheets.” A more specific rule will take precedence over a more broad rule if two rules target the same element. If two rules at the same hierarchical level have the same property assignment, the later property assignment will take priority.</p>
+
+    <p>By default, every HTML element gets padding and margin space.</p>
+
+    <h2>Colours</h2>
+    <p>The colour property applies to anything in the foreground that shows a colour, not simply text. For example, if the element's border-colour isn't specified explicitly, the default colour value will be used.</p>
+
+    <h3>Background Colour</h3>
+    <p>The visual display of a web page is greatly influenced by the background. CSS has various attributes for decorating an element’s background, inserting pictures in the background and managing their position, and so on. background-color, background-image, background-repeat, background-attachment, and background-position are the background properties.</p>
+
+    <h3>Background Image</h3>
+    <p>The background-image property sets an image to an HTML element's background. When working with backgrounds, there are various properties to consider. To reduce the code or prevent unnecessary typing, all of these properties can also be specified in a single property. The background property is a shortcut for setting all the background properties at once, including background-color, background-image, background-repeat, background-attachment, and background-position.</p>
+
+    <h2>Compilers, Interpreters, and Debugging</h2>
+    <h3>Difference Between the Compiler and Interpreter</h3>
+    <p>A compiler is a piece of software that transforms code written in one programming language to another. It is software that converts human-readable code into a language that a computer can process (binary 1 and 0 bits). The syntax of the programming language is followed by a compiler. The compiler is just a program and cannot correct problems detected inside it. As a result, if you make a mistake, you must rewrite the syntax of your program correctly. It will not compile otherwise.</p>
+    <p>An interpreter is a computer program that converts high-level programming statements into machine codes line by line. This category includes source code, pre-compiled code, and scripts. Compilers and interpreters are both software programs that convert higher-level programming languages into machine code. However, before the program starts, the entire code is converted to machine code by a compiler. When a program runs on an interpreter,m on the other hand, it converts each line of the program code into machine code one statement at a time. It’s worth noting that interpreter programs are used to execute HTML, CSS, and JavaScript code.</p>
+
+    <h3>Importance of Debugging</h3>
+    <p>We are humans and humans make mistakes. Debugging is crucial because it allows software engineers and developers to rectify mistakes before releasing a product to the general public. It’s an add-on to testing, which involves determining how a mistake affects a program as a whole. You can figure out which element/property and functions to alter systematically by looking at each line of code.</p>
+
+    <h3>Debugging CSS Code</h3>
+    <p>Open the developer tools in Chrome, and click Ctrl+Shift+I (Windows) or Cmd+Option+I (macOS). You may also open Chrome developer tools for more tool options.</p>
+
+    <h2>Divs</h2>
+    <p>One or more rectangular boxes make up every element that can be shown on a web page. The CSS box model explains how rectangular boxes are displayed on a web page. These boxes can have a variety of features and interact with one another in various ways, but they all contain a contact area as well as optional padding, border, and margin regions. The width, height, padding, border, and margin CSS attributes determine how much space an element may occupy on a web page.</p>
+    <p>The CSS display property determines how all HTML elements are viewed by default. For example, the &lt;div&gt; element is rendered as a block, whereas the &lt;span&gt; keenest is displayed inline. One of the most powerful and useful features in CSS is the display property. It may be particularly handy for creating web pages that have a unique appearance while still following online standards. The display property can override the default display value of an element. Examples include converting an inline-level element to a block-level element or converting a block-level element to an inline-level element.</p>
+
+    <h2>Positioning</h2>
+    <p>Positioning is a method within CSS where you may precisely position elements on a page, dictated by an x-axis and a y-axis. There are several ways to position an element: absolute, relative, fixed, inherit, and static. The first three are the most common. Static is the default eleement and is positioned in accordance with the page's normal flow. If it is positioned in relation to the original parent element, it is called absolute positioning. Relative positioning describes how HTML elements are offset from their normal position. Fixed positioning defines a box's position in relation to the window and ensures that it remains in that position even while the content scrolls underneath it.</p>
+
+    <p>The float property can be used to wrap content around other content, such as text around an image. In the same way, the clear property determines which sides of an element's box other floating elements are not permitted to occupy.</p>
+
+    <h2>Fonts</h2>
+    After the colour, the font is perhaps the most basic aspect of a webpage. The default font userd in HTML is serif. CSS font properties control the font family, boldness, size, and style of a text. The font-family property, which specifies an element's font, can store many font names. It switches to the next available font if the first isn't supported by the browser.
+
+    <h2>Web hosting</h2>
+    <p>There are several approaches to creating a website. Most individuals prefer to buy web hosting and a domain name in order to have more control over the content and design of their websites. Web hosting is the rental of disc space on a web server owned by a hosting firm. On the web server, you upload website files. Visitors to the website are served information via the web server. In addition, a File Transmit Protocol (FTP) tool will be required to transfer the website files to the server.</p>
+
+    <p>Visit the pages for <a href="htmlnotes.html">HTML</a> and <a href="jsnotes.html">JavaScript</a> to learn more about HTML and JavaScript.</p>
+    
+    <script src="cssnotes.js"></script>
+</body>
+</html>
